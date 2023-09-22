@@ -1,14 +1,49 @@
 footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+
+  /* TODO configure font */
 }
 
 footer .footer {
-  max-width: 1200px;
+  max-width: var(--page-max-width);
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  /* TODO add horizontal padding */
 }
 
 footer .footer p {
   margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .columns {
+  padding-bottom: 50px;
+}
+
+.footer > div > div > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0 40px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  border-top: 1px solid var(--footer-border-color);
+}
+
+.footer .columns > div > div > ul {
+  display: flex;
+  flex-direction: row;
+
+  /* TODO this is an approximation, need to check how it is actually implemented */
+  gap: 0 140px;
+}
+
+footer .footer li > a {
+  color: var(--text-color-white);
 }

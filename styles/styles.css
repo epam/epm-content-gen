@@ -24,6 +24,9 @@
   --highlight-background-color: #f5f5f5;
   --text-color: #000;
   --text-color-white: #fff;
+  --footer-background-color: #2c2a29;
+  --footer-text-color: #999;
+  --footer-border-color: #444;
 
   /* fonts */
   --body-font-family: var(--primary-font);
