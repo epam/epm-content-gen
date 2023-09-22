@@ -1,6 +1,8 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .columns img {
@@ -11,6 +13,10 @@
   order: 1;
 }
 
+.columns > div:first-child {
+  margin-top: 0;
+}
+
 .columns > div > .columns-img-col {
   order: 0;
 }
@@ -19,15 +25,22 @@
   display: block;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
   }
+}
+
+.columns p + p {
+  margin-top: 20px;
+}
+
+.columns-wrapper {
+  margin-bottom: 20px;
 }

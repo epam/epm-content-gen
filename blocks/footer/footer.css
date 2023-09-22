@@ -1,17 +1,26 @@
 footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
-
-  /* TODO configure font */
 }
 
 footer .footer {
   max-width: var(--page-max-width);
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding: 45px 15px 60px;
+}
 
-  /* TODO add horizontal padding */
+@media (min-width: 768px) {
+  footer .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .footer {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 
 footer .footer p {
@@ -24,24 +33,64 @@ footer ul {
 }
 
 .footer .columns {
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 .footer > div > div > ul {
   display: flex;
-  flex-direction: row;
-  gap: 0 40px;
-  padding-bottom: 30px;
-  padding-top: 40px;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   border-top: 1px solid var(--footer-border-color);
 }
 
-.footer .columns > div > div > ul {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 768px) {
+  .footer > div > div > ul {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
 
-  /* TODO this is an approximation, need to check how it is actually implemented */
-  gap: 0 140px;
+.footer .columns > div {
+  align-items: flex-start;
+}
+
+.footer .columns > div > div:first-child {
+  color: var(--footer-contact-text-color);
+  font-size: .75rem;
+}
+
+.footer .columns > div > div > ul > li {
+  width: 100%;
+}
+
+.footer .columns > div > div > ul > li + li {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer .columns > div > div > ul {
+    display: flex;
+  }
+
+  .footer .columns > div > div > ul > li {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer .columns > div > div > ul > li + li {
+    margin-top: 0;
+  }
+}
+
+.footer .columns > div > div > ul > li > ul > li {
+  margin-top: 10px;
+}
+
+.footer .columns img {
+  width: unset;
 }
 
 footer .footer li > a {
