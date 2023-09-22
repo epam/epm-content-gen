@@ -9,14 +9,14 @@ footer .footer {
   padding: 45px 15px 60px;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   footer .footer {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   footer .footer {
     padding-left: 55px;
     padding-right: 55px;
@@ -45,7 +45,7 @@ footer ul {
   border-top: 1px solid var(--footer-border-color);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .footer > div > div > ul {
     flex-direction: row;
     gap: 40px;
@@ -69,7 +69,7 @@ footer ul {
   margin-top: 30px;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .footer .columns > div > div > ul {
     display: flex;
   }
